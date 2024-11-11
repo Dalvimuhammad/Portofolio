@@ -1,0 +1,79 @@
+section {
+    padding-top: 128px;
+    position: relative;
+}
+
+section::before {
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    color: gray;
+    opacity: 0.25;
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    font-weight: 700;
+    
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.home h1 {
+    font-size: 72px;
+}
+.home h3 {
+    font-size: 48px;
+}
+.btn.button {
+    border: 3px solid black;
+    border-radius: 32px;
+}
+.btn.button:hover .btn.button:active{
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+}
+.about h1 {
+    font-size: 72px;
+}
+.job h3 {
+    font-size: 25px;
+}
+.job h5 {
+    font-size: 15px;
+}
+
+.arrow {
+    animation: 1s upDown infinite;
+}
+.about::before {
+    content: 'About';
+}
+
+.about-exp-detail {
+    margin-top: 32px;
+}
+
+.about-exp-detail-item {
+    display: none;
+}
+
+.about-exp-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
