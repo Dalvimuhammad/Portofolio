@@ -11,26 +11,26 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-              <a class="navbar-brand fs-3 fw-bold" href="#">John Doe</a>
+              <a class="navbar-brand fs-3 fw-bold" href="#home">John Doe</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Work</a>
+                    <a class="nav-link" href="#work">Work</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
-              </div><button type="button" class="btn btn-outline-light">Light</button>
+              </div>
             </div>
           </nav>
     </header>
@@ -51,7 +51,7 @@
             </div>
         </div>
     </section>
-    <section class="about container">
+    <section id="about" class="about container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae quidem vero consequuntur dolores laboriosam in ratione eos saepe officiis nemo vitae impedit, laborum ducimus consequatur nulla atque illum. Distinctio quae laudantium aliquam, natus quia soluta, sapiente voluptates quidem, fugit iure recusandae ipsum facere rerum sed debitis reiciendis maiores ipsa.</p>
         <div class="about-exp">
             <div class="about-exp-detail">
@@ -83,6 +83,64 @@
                     <button class="btn button" onclick="toggleDetail(event)">More Info</button>
                 </div>
                 <p class="about-exp-detail-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, error praesentium, qui amet eos dolor earum corrupti facere assumenda repellendus ducimus, eius non dignissimos fugiat iusto sapiente totam perferendis.</p>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work container">
+        <div class="work-detail row d-flex mt-3 align-items-center gap-5">
+            <div class="work-detail-word col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum accusamus officia commodi dicta fuga dolorum quibusdam tempora repellat, blanditiis corporis adipisci, similique nemo est non vel placeat a! Tempore odit possimus culpa ipsa rem voluptatum a consequatur neque consectetur tempora! Veniam quis quia error recusandae debitis repellat sed quas.</p>
+            </div>
+            <div class="col work-img">   
+                <div class="work-1 work-img-item">
+                    <img src="./images/work-1.png" alt="Work-1">
+                </div>
+                <div class="work-2 work-img-item">
+                    <img src="./images/work-2.png" alt="Work-2">
+                </div>
+                <div class="work-3 work-img-item">
+                    <img src="./images/work-3.png" alt="Work-3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="mt-3 col">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sed omnis voluptatem aperiam. Alias fugiat deserunt, incidunt harum minus officiis consectetur, esse nihil sit culpa saepe eligendi reiciendis dicta. Nihil impedit ullam qui hic repellendus vel odio quasi labore eveniet dolores. Earum, nihil. Perspiciatis cum aspernatur dicta dolores nemo eligendi neque qui nesciunt nihil! Laboriosam aliquam et, quasi repudiandae cumque, necessitatibus nostrum optio quis, alias accusamus quam harum magnam officiis!</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img src="./images/Facebook.svg" alt="Facebook.png">
+                        <p>Jhon Doe</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img src="./images/Twitter.svg" alt="Twitter.png">
+                        <p>Jhon Doe</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img src="./images/Instagram.svg" alt="Instagram.png">
+                        <p>Jhon Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <form>
+                    <div>
+                        <label>Email address</label>
+                        <input type="email" placeholder="example@gmail.com">
+                    </div>
+                    <div>
+                        <label>Subject</label>
+                        <input type="text" placeholder="your subject">
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <input type="text" placeholder="your message">
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="btn button">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
