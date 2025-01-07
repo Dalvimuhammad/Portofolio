@@ -19,6 +19,18 @@ section::before {
     
 }
 
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+.logo img {
+    width: 75px;
+    height: 50px;
+    border: 2px solid #0000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .navbar {
     background-color: white;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
@@ -46,6 +58,20 @@ section::before {
 }
 .job h5 {
     font-size: 15px;
+}
+
+.img-pas {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+}
+
+.img-sigma {
+    width: 350px;
+    height: 400px;
 }
 
 .arrow {
@@ -89,6 +115,40 @@ section::before {
     grid-area: work-3;
 }
 
+.logo-detail {
+    position: relative;
+}
+
+.logo-detail:hover::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.logo-1:hover::after {
+    content: 'Flutter';
+}
+.logo-2:hover::after {
+    content: 'Firebase';
+}
+.logo-3:hover::after {
+    content: 'HTML';
+}
+.logo-4:hover::after {
+    content: 'CSS';
+}
+.logo-5:hover::after {
+    content: 'JavaScript';
+}
+
 .work-img-item:hover::after {
     content: '';
     width: 100%;
@@ -106,15 +166,15 @@ section::before {
 }
 
 .work-1:hover::after {
-    content: 'Web Project';
+    content: 'Mobile Application';
 }
 
 .work-2:hover::after {
-    content: 'Software Project';
+    content: 'Mobile Application';
 }
 
 .work-3:hover::after {
-    content: 'Front-End Development';
+    content: 'Kalkulator BMI';
 }
 
 .work-img-item {
