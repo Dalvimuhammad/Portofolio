@@ -66,7 +66,12 @@ section::before {
     height: 300px;
     border: 2px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 50px;
+    margin-left: 90px;
+}
+
+.contact-logo img {
+    width: 85px;
+    height: 70px;
 }
 
 .img-sigma {

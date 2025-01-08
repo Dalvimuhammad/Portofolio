@@ -14,3 +14,8 @@ function toggleDetail(e) {
     console.log($(item).children(".about-exp-detail-item"))
 
 }
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Mencegah pengiriman form default
+  alert("Form submitted! Configure backend to send the email.");
+});
